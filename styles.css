@@ -13,6 +13,8 @@ body {
     overflow: hidden;
 }
 
+
+
 .container {
 width: 500px;
 display: flex;
@@ -73,22 +75,34 @@ p {
     text-align: center;
     padding-top: 25px;
     cursor: pointer;
+    outline: none;
 }
 
 
 .fullglass {
     background:#d4f1f9;
 }
+
 .drinkingglasses p {
    font-size: 12px;
    color: #0f5e9c;
 }
 
-.eightglassescontainer:focus {
+.drinkingglasses:focus {
     outline: none;
+    box-shadow: none;
 }
 
-.drinkingglasses:focus {
+.drinkingglasses p:focus {
+    outline: none;
+ }
+
+ .clicked:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+br:focus {
     outline: none;
 }
 
@@ -103,11 +117,12 @@ p {
 
     h1 {
         font-size: 24px;
+        margin-top: 0;
     }
 
     .container {
         width: 320px;
-        margin:0;
+        margin-top:-20px;
         padding-top: 0;
         }
 
@@ -123,6 +138,12 @@ p {
         width: 140px;
         height: 270px;
     }
+
+    .drinkingglasses:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
 
 
 
